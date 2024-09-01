@@ -1,83 +1,66 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const artId = urlParams.get('art');
+    // artwork details
+    const artworks = {
+        '1': {
+            title: 'Artwork 1',
+            artist: 'Rabindranath Tagore',
+            description: 'Description of Artwork 1.',
+            image: 'images/artwork1.jpg'
+        },
+        '2': {
+            title: 'Artwork 2',
+            artist: 'Raja Ravi Varma',
+            description: 'Description of Artwork 2.',
+            image: 'images/artwork2.jpg'
+        },
+        '3': {
+            title: 'Artwork 3',
+            artist: 'Tyeb Mehta',
+            description: 'Description of Artwork 3.',
+            image: 'images/artwork3.webp'
+        },
+        '4': {
+            title: 'Artwork 4',
+            artist: 'Sita Devi',
+            description: 'Description of Artwork 4.',
+            image: 'images/artwork4.jpg'
+        },
+        '5': {
+            title: 'Artwork 5',
+            artist: 'Artist Name 5',
+            description: 'Description of Artwork 5.',
+            image: 'images/artwork5.png'
+        },
+        '6': {
+            title: 'Artwork 6',
+            artist: 'Artist Name 6',
+            description: 'Description of Artwork 6.',
+            image: 'images/artwork6.jpeg'
+        },
+        '7': {
+            title: 'Artwork 7',
+            artist: 'Artist Name 7',
+            description: 'Description of Artwork 7.',
+            image: 'images/artwork7.jpg'
+        },
+        '8': {
+            title: 'Artwork 8',
+            artist: 'Artist Name 8',
+            description: 'Description of Artwork 8.',
+            image: 'images/artwork8.webp'
+        }
+    };
 
-const artworks = [
-    {
-        id: 1,
-        title: "Artwork 1",
-        artist: "Rabindranath Tagore",
-        description: "A beautiful piece by Rabindranath.",
-        image: "images/artwork1.jpg",
-        room: "Cultural Art Room"
-    },
-    {
-        id: 2,
-        title: "Artwork 2",
-        artist: "Raja Ravi Varma",
-        description: "A stunning artwork by Raja Ravi Varma.",
-        image: "images/artwork2.jpg",
-        room: "Cultural Art Room"
-    },
-    {
-        id: 3,
-        title: "Artwork 3",
-        artist: "Unknown Artist",
-        description: "An intriguing modern piece.",
-        image: "images/artwork3.webp",
-        room: "Modern Art Room"
-    },
-    {
-        id: 4,
-        title: "Artwork 4",
-        artist: "Unknown Artist",
-        description: "A captivating modern artwork.",
-        image: "images/artwork4.jpg",
-        room: "Modern Art Room"
-    },
-    {
-        id: 5,
-        title: "Artwork 5",
-        artist: "Unknown Artist",
-        description: "A vibrant piece of modern art.",
-        image: "images/artwork5.png",
-        room: "Modern Art Room"
-    },
-    {
-        id: 6,
-        title: "Artwork 6",
-        artist: "Unknown Artist",
-        description: "A striking modern artwork.",
-        image: "images/artwork6.jpeg",
-        room: "Modern Art Room"
-    },
-    {
-        id: 7,
-        title: "Artwork 7",
-        artist: "Tyeb Mehta",
-        description: "A remarkable piece by Tyeb Mehta.",
-        image: "images/artwork7.jpg",
-        room: "Cultural Art Room"
-    },
-    {
-        id: 8,
-        title: "Artwork 8",
-        artist: "Sita Devi",
-        description: "An exquisite artwork by Sita Devi.",
-        image: "images/artwork8.webp",
-        room: "Cultural Art Room"
+    const artwork = artworks[artId];
+    if (artwork) {
+        document.querySelector('header h1').textContent = artwork.title;
+        document.querySelector('.artwork-details img').src = artwork.image;
+        document.querySelector('.artwork-details img').alt = artwork.title;
+        document.querySelector('.artwork-details h2').textContent = artwork.artist;
+        document.querySelector('.artwork-details p').textContent = artwork.description;
+    } else {
+        document.querySelector('.artwork-details').innerHTML = '<p>Artwork not found.</p>';
     }
-];
-
-// Function to get artwork details by ID
-function getArtworkDetails(id) {
-    return artworks.find(artwork => artwork.id === id);
-}
-
-// Example usage
-const artworkId = new URLSearchParams(window.location.search).get('art');
-const artworkDetails = getArtworkDetails(parseInt(artworkId, 10));
-
-if (artworkDetails) {
-    document.querySelector('h1').textContent = artworkDetails.title;
-    document.querySelector('h2').textContent = artworkDetails.artist;
-    document.querySelector('img').src = artworkDetails.image;
-    document.querySelector('p').textContent = artworkDetails.description;
-}
+});
