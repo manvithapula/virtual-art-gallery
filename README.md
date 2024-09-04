@@ -48,8 +48,6 @@ To use the Virtual Art Gallery:
 5. **Return to Home:** Use navigation links to return to the home page or move between different rooms and sections of the gallery.
 
 ## Output Screenshots 
-
-![Uploading Screenshot 2024-09-04 215741.png…]()
 ![Screenshot 2024-09-04 215800](https://github.com/user-attachments/assets/c7bc14d3-01a1-4d3e-9ee7-ded3cd376f48)
 ![Screenshot 2024-09-04 215842](https://github.com/user-attachments/assets/2532f176-63f2-4db2-bb96-76b3fd077f6a)
 ![Screenshot 2024-09-04 215855](https://github.com/user-attachments/assets/e4dfe446-22ee-49a0-ab0d-d7d210b346ca)
