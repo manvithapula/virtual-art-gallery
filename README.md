@@ -47,4 +47,11 @@ To use the Virtual Art Gallery:
 4. **Learn About Artists:** Navigate to the Artist Biographies page to read about the artists featured in the gallery.
 5. **Return to Home:** Use navigation links to return to the home page or move between different rooms and sections of the gallery.
 
+## Screenshots
+
+![Screenshot 2024-09-04 215741](https://github.com/user-attachments/assets/9fffd276-e6fc-458b-88db-4abcd4dc3a45)
+![Screenshot 2024-09-04 215800](https://github.com/user-attachments/assets/f982404d-7193-4de4-9019-d8d714042054)
+![Screenshot 2024-09-04 215842](https://github.com/user-attachments/assets/f7b8b09a-69b5-429f-81a3-3034bdd1cb95)
+![Screenshot 2024-09-04 215855](https://github.com/user-attachments/assets/b6479bdb-8917-48b5-b745-cee7bd08d399)
+![Screenshot 2024-09-04 215921](https://github.com/user-attachments/assets/f6035dca-ddc0-4c58-8625-81a84426d861)
 
